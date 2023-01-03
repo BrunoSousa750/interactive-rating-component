@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(18, 20, 23);
+  font-family: "Overpass", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  overflow: hidden;
+  border-radius: 3rem;
+  padding: 2.5rem;
+  background: rgba(37, 45, 55, 0.5);
+  height: 44rem;
+  width: 45rem;
+  color: rgb(255, 255, 255);
+}
+.main--star {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: rgb(37, 45, 55);
+}
+.main--heading {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+.main--paragraph {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  line-height: 2.5rem;
+}
+.main--checkboxes {
+  margin-top: 2.5rem;
+  margin-bottom: 4.5rem;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+.main--checkboxes--checkmark {
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgb(37, 45, 55);
+  color: rgb(255, 255, 255);
+  padding: 1.5rem 2rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.main--checkboxes--checkmark:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(124, 135, 152);
+  transform: scale(1.1);
+}
+.main--checkboxes input {
+  opacity: 0;
+}
+input:checked ~ .main--checkboxes--checkmark {
+  background-color: hsl(25deg, 97%, 53%);
+}
+.main--btn {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 2.5rem;
+  display: block;
+  border-radius: 3rem;
+  padding: 1.5rem;
+  color: rgb(255, 255, 255);
+  background: hsl(25deg, 97%, 53%);
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.main--btn:hover {
+  transform: translateY(-0.25rem);
+  color: hsl(25deg, 97%, 53%);
+  background: rgb(255, 255, 255);
+}
+.main--btn:active {
+  transform: translateY(0.25rem);
+}
+
+.result {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 3rem;
+  padding: 2.5rem;
+  background: rgba(37, 45, 55, 0.5);
+  height: 44rem;
+  width: 45rem;
+  color: rgb(255, 255, 255);
+}
+.result--rating {
+  display: inline-block;
+  width: 65%;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  color: hsl(25deg, 97%, 53%);
+  background: rgb(37, 45, 55);
+}
+.result--thanks {
+  margin: 1rem 0;
+  font-size: 3.6rem;
+}
+.result--paragraph {
+  color: rgb(149, 158, 172);
+  font-size: 1.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 2rem;
+  }
+  .main {
+    height: 42rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
