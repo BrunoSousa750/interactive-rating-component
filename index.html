@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Interactive Rating Component</title>
+</head>
+<body>
+  <div class="main ">
+    <div class="main--star">
+      <img src="src/images/icon-star.svg" alt="Star icon">
+    </div>
+
+    <h1 class="main--heading">
+      How did we do?
+    </h1>
+
+    <p class="main--paragraph">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga odit dolores esse quisquam. Dolores veniam, asperiores odit est quo eaque illo at, itaque repellendus, vitae natus aliquid. Numquam, id porro?
+    </p>
+
+    <div class="main--checkboxes">
+      <label class="main--checkboxes--container">
+        <input type="radio" checked="checked" name="radio" value="1">
+        <span class="main--checkboxes--checkmark">1</span>
+      </label>
+      <label class="main--checkboxes--container">
+        <input type="radio" name="radio" value="2">
+        <span class="main--checkboxes--checkmark">2</span>
+      </label>
+      <label class="main--checkboxes--container">
+        <input type="radio" name="radio" value="3">
+        <span class="main--checkboxes--checkmark">3</span>
+      </label>
+      <label class="main--checkboxes--container">
+        <input type="radio" name="radio" value="4">
+        <span class="main--checkboxes--checkmark">4</span>
+      </label>
+      
+      <label class="main--checkboxes--container">
+        <input type="radio" name="radio" value="5">
+        <span class="main--checkboxes--checkmark">5</span>
+      </label>
+    </div>
+
+    <a href="#" id="submit" class="main--btn">submit</a>
+
+  </div>
+
+  <div class="result hidden">
+    <img src="src/images/illustration-thank-you.svg" alt="Thank you states illustration">
+
+    <p class="result--rating">
+      You Selected <span id="rated" class="result--rated">4</span> out of 5
+    </p>
+
+    <div class="result--thanks">
+      Thank you!
+    </div>
+
+    <div class="result--paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quas voluptatem, unde recusandae culpa, reiciendis consequatur repellendus perferendis optio.
+    </div>
+
+    <a href="#" id="rate-again" class="main--btn">rate again</a>
+
+  </div>
+</body>
+
+  <script src="index.js"></script>
+
+</html>
